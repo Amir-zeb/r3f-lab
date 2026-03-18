@@ -17,12 +17,12 @@ const App = () => {
 
   return (
     <main>
-      <OffCanvas handleClose={handleClose} show={show} handleShow={handleShow} setActiveCanvas={setActiveCanvas} />
-      <Button variant="outline-primary" onClick={handleShow} className='rounded-pill position-fixed top-50 start-0 translate-middle-y z-3'>
+      <OffCanvas handleClose={handleClose} show={show} handleShow={handleShow} setActiveCanvas={setActiveCanvas} active={activeCanvas} />
+      <Button variant="dark" onClick={handleShow} className='rounded-pill position-fixed top-50 start-0 translate-middle-y z-3'>
         {'>'}
       </Button>
       <div>
-        <div className='canvas_container bg-secondary'>
+        <div className='canvas_container'>
           <CanvasComponent />
         </div>
       </div>
