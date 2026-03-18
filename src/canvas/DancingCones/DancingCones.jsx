@@ -25,6 +25,7 @@ const DancingCones = () => {
                 dpr={[1, 1.5]}
                 performance={{ min: 0.5 }}
             >
+                <color attach="background" args={['#f0f0f0']} />
                 <ResponsiveOrthoCamera />
                 <OrbitControls enableZoom={false} enablePan={false} />
                 <Suspense fallback={<CanvasLoader />}>
