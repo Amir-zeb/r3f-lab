@@ -1,8 +1,8 @@
 {
-  "name": "my-3d-model",
+  "name": "r3f-lab",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://amir-zeb.github.io/r3f-lab",
+  "homepage": "https://amir-zeb.github.io/r3f-lab/",
   "type": "module",
   "scripts": {
     "dev": "vite",
