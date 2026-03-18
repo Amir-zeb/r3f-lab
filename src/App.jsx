@@ -11,7 +11,7 @@ const App = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [activeCanvas, setActiveCanvas] = useState('Globe');
+  const [activeCanvas, setActiveCanvas] = useState('DancingCones');
 
   const CanvasComponent = Canvas[activeCanvas]
 

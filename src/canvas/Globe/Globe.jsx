@@ -32,7 +32,7 @@ export default Globe;
 
 const Planet = ({ position, args }) => {
     const ref = useRef()
-    const texture = useTexture("public/2k_earth_nightmap.jpg");
+    const texture = useTexture("/2k_earth_nightmap.jpg");
 
     useFrame(() => {
         ref.current.rotation.x += 0.001
