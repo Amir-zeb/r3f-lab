@@ -11,7 +11,7 @@ const App = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [activeCanvas, setActiveCanvas] = useState('DancingCones');
+  const [activeCanvas, setActiveCanvas] = useState('Globe');
 
   const CanvasComponent = Canvas[activeCanvas]
 
@@ -22,7 +22,7 @@ const App = () => {
         {'>'}
       </Button>
       <div>
-        <div className='canvas_container bg-danger'>
+        <div className='canvas_container bg-secondary'>
           <CanvasComponent />
         </div>
       </div>
