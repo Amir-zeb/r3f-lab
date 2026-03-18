@@ -7,7 +7,7 @@ import * as THREE from "three";
 const Stars = ({ size = 0.5, color = "#f5e664", count = 500 }) => {
     const ref = useRef();
 
-    const texture = useTexture("/star.png");
+    const texture = useTexture(import.meta.env.BASE_URL+"/star.png");
 
     // --------------------------
     // Generate positions & offsets

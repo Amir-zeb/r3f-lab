@@ -44,7 +44,7 @@ export default DancingCones;
 const SpheresGroup = () => {
     // unable to find it in assets
     // const texture = useTexture('../../assets/textures/liquid-marbling-texture.jpg')
-    const texture = useTexture('/liquid-marbling-texture.jpg')
+    const texture = useTexture(import.meta.env.BASE_URL + '/liquid-marbling-texture.jpg')
     return (
         <group position={[2, 0, 0]}>
             <SphereShape args={[0.2, 20]} position={[0, 2, -2]} color="#d751de" folderName='cube1' map={texture} rotation={[0, THREE.MathUtils.degToRad(-50), 0]} />
@@ -57,7 +57,7 @@ const SpheresGroup = () => {
 
 const SphereWithCones = () => {
     const ref = useRef()
-    const texture = useTexture('/liquid-marbling-texture.jpg')
+    const texture = useTexture(import.meta.env.BASE_URL + '/liquid-marbling-texture.jpg')
 
     const controls = useControls({
         radius: { value: 1, min: 0, max: 10, step: .1 },
